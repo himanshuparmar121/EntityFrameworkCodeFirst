@@ -10,6 +10,7 @@ namespace EntityFrameworkCodeFirst.Models
         public String LastName { get; set; }
         public int Age { get; set; }
         public String EmailAddress { get; set; }
+        public String Department { get; set; }
         public List<Address> Addresses { get; set; } = new List<Address>();
     } 
 }
