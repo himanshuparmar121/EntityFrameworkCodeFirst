@@ -2,7 +2,7 @@
 
 namespace EntityFrameworkCodeFirst.Migrations
 {
-    public partial class InitialDBCreation : Migration
+    public partial class EFCodeFirst : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,8 @@ namespace EntityFrameworkCodeFirst.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Age = table.Column<int>(type: "int", nullable: false),
-                    EmailAddress = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    EmailAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Department = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

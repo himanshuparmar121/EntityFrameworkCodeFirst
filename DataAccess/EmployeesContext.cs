@@ -10,5 +10,7 @@ namespace EntityFrameworkCodeFirst.DataAccess
         public EmployeeContext(DbContextOptions options) : base(options) { }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Address> Address { get; set; }
+
+        
     }
 }

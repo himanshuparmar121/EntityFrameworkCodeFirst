@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkCodeFirst.Migrations
 {
     [DbContext(typeof(EmployeeContext))]
-    [Migration("20210411022219_InitialDBCreation")]
-    partial class InitialDBCreation
+    [Migration("20210417062119_EFCodeFirst")]
+    partial class EFCodeFirst
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,6 +59,9 @@ namespace EntityFrameworkCodeFirst.Migrations
 
                     b.Property<int>("Age")
                         .HasColumnType("int");
+
+                    b.Property<string>("Department")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("nvarchar(max)");
