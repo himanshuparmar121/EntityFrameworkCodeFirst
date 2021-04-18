@@ -15,3 +15,5 @@
 
 5). dotnet ef database update
     Database can be updated i.e created by this command.
+
+6). Added validation for Employee and Address then udated migration script and database.
